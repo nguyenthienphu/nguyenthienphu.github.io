@@ -1,0 +1,367 @@
+*{
+    color:blue;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+#top{
+    padding: 10px 20px;
+    background-color: #00BFFF;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+}
+a:hover{
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin: 10px auto;
+}
+section > img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+}
+.user{
+    justify-content: flex-end;
+}
+.user >li > a{
+    padding: 0 10px ;
+}
+.user > li:first-child{
+    border-right: 2px solid #005caa;
+}
+nav{
+    justify-content: space-between;
+    align-items: center;
+}
+.menu > li > a{
+    display: block;
+    padding: 10px 20px;  
+}
+li > a > i{
+    padding: 5px;
+}
+.submenu > li > a{
+    border-bottom: 1px solid rgb(123, 123, 126);
+}
+.submenu{
+    display: none;
+    position: absolute;
+    z-index: 99999999;
+    background-color:rgb(233, 236, 241);
+    width: 200px;
+} 
+.sub:hover .submenu{
+    display: block;
+}
+.works{
+    background-color: #00BFFF;
+    position: absolute;
+    top:200px;
+    left: 75px;
+    width: 30%;
+}
+.tabs-contents{
+    padding: 15px;
+    text-align: center;
+    display: none;
+}
+.tabs-contents > input{
+    width: 40%;
+    padding: 5px;
+}
+.tab-content{
+    padding: 25px 20px;
+}
+.active{
+    display: block;
+}
+.shape{
+    position: absolute;
+    top: 150px;
+}
+.shape a{
+    background-color: #00BFFF;
+    padding: 10px;
+    margin: 10px;
+}
+.go{
+    background-color: rgb(232, 232, 238);
+    position: absolute;
+    left: 122px;
+    top: 100px;
+    width: 182px;
+}
+.end{
+    background-color: rgb(232, 232, 238);
+    position: absolute;
+    left: 122px;
+    top: 180px;
+    width: 182px;
+}
+#submenulanguage::after{
+    content: "";
+    border-width: 15px;
+    border-style:solid ;
+    border-color: transparent transparent rgb(232, 232, 238) transparent;
+    position: absolute;
+    bottom: 100%;
+    right: 15%;
+}
+#submenulanguage{
+    position:absolute;
+    z-index: 999999;
+    right: 50px;
+    top: 50px;
+    background-color:rgb(232, 232, 238) ;
+    padding: 30px 50px;
+}
+#submenulanguage select{
+    width: 100%;
+    padding: 5px;
+    overflow: auto;
+}
+#submenulanguage input{
+    width: 100%;
+    margin-top:15px ;
+    padding: 10px;
+}
+#exit{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.social_media{
+    background-color:#4ebdec;
+    color: white;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.social_media span{
+    margin-right: 14px;
+}
+.footer_menu{
+    text-align: center;
+    margin: 48px 0px;
+}
+.footer_menu a{
+    color: #00305b;
+    font-size: 16px;
+    font-weight:600;
+    margin-right: 15px;
+}
+.footer_logo {
+    text-align: center;
+    margin: 20px 0px;
+}
+.footer_logo .footer_logo--info{
+    color:#1f4777;
+    font-size: 28px;
+    border-right: solid #1f4777 2px;
+    padding-right: 10px;
+}
+.footer_logo--img{
+    margin-left: 18px;
+}
+.text-bold{
+    font-weight: 600;
+}
+.text-b-under{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.footer_info--detail{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:1200px;
+    margin: auto;
+    color:#1f4777;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.bocongthuong-img{
+    width: 60%;
+    margin: 0px auto;
+}
+.flex-2{
+    flex:2;
+}
+.flex-1{
+    flex: 1;
+}
+.footer_info--detail-pr{
+    margin: 0px 40px;
+}
+.footer_info--detail-bocongthuong{
+    margin-bottom: 109px;
+}
+.footer-copy{
+    text-align: center;
+    color: #1f4777;
+    margin: 20px 0px;
+    margin-bottom: 50px;
+}
+
+.footer_info--detail-bamboo{
+    margin-bottom: 15px;
+}
+footer{
+    background-image: linear-gradient(#f0f7fd, #f6fbff, #ffffff);;
+}
+
+.social-icons{
+    color:white;
+    text-decoration: none;
+}
+.social-icons:hover{
+    color:#00305b
+}
+.pr-img{
+    float:right;
+    margin-top: 15px;
+}
+/* css places */
+.places{
+    margin: 10px auto;
+    width: 95%;
+}
+.places_box {
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.place-box-detail{
+    width: 45%;
+    border-radius: 5px;
+    background-size:cover;
+    background-position: 50%;
+    margin-bottom: 15px;
+    position: relative;
+}
+.place-box-detail--info{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+.place-box-detail--info h1{
+    font-size: 65px;
+    font-weight: 400;
+    color: white;
+}
+.place-box-detail--info a h1:hover,.price:hover{
+    color: blue;
+}
+.places_seNa--seoul{
+    background-image: url("/images/seoul.jpg");
+}
+.places_seNa--narita{
+    background-image: url("/images/Narita.jpg");
+}
+.places_NhaVan--NhaTrang{
+    background-image: url("/images/nhatrang.jpg");
+}
+.places_NhaVan--VanDon{
+    background-image: url("/images/vandon.jpg");
+}
+.price{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+.hcm-city{
+    background-image: url("/images/hcm.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.hcm-city--box{
+    color: white;
+    text-align: center;
+}
+.hcm-city--box h1{
+    font-size: 58px;
+    font-weight: 400;
+}
+/* css login */
+.login{
+    background-image: url(../images/login.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15rem;
+}
+#form-login{
+    max-width: 380px;
+    background: rgba(255, 255, 255, 0.6);
+    flex-grow: 1 ;
+    padding: 40px;
+}
+#form-login > div{
+    padding: 10px 0;
+}
+.form input{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    flex-grow: 1;
+    border-bottom: 1px solid black;
+    margin: 20px 0;
+    width: 100%;
+}
+input[type=submit]{
+    background: greenyellow;
+    padding: 10px;
+    border-radius: 10px;
+    width: 45%;
+    margin-left: 75px;
+    margin-top: 20px;
+}
+.forget{
+    margin-left:90px;
+}
+i.fas{
+    position: relative;
+    right: -278px;
+    top: -40px;
+}
+/*uuDai*/
+.images a{
+    width: 25%;
+}
+.images img{
+    padding-right: 10px;
+    width: 100%;
+    transition: transform 1s;
+}
+.images img:hover{
+    transform: rotate(30deg);
+}
+.design h2,p,.images {
+    margin: 20px 0;
+}
+.design{
+    border-bottom:2px solid slategray ;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link href="https://www.bambooairways.com/vn-vi/wp-content/themes/bamboo/resources/assets/images/favicon.png" rel="shortcut icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="container flex">
+        <a href="home.html">
+            <img src="images/logoBamBoo.jpg" alt="logo"/>
+        </a>
+        <ul class="user flex">
+            <li><a href="signin.html">Đăng nhập</a></li>
+            <li><a href="signup.html">Đăng ký</a></li>
+        </ul> 
+    </nav>
+    <section class="login">
+        <form action="" id="form-login">
+            <a href="home.html">
+                <img src="images/logoBamBoo.jpg" alt="logo"/>
+            </a>
+            <h1>Chào mừng đến với trang wed</h1>
+            <div class="form input">
+                <input type="text" placeholder="Email/SĐT" id="user"/>
+            </div>
+            <div class="form input">
+                <input type="password" placeholder="Password" name="" id="password"/>
+                <i class="fas fa-eye" onclick="daoTT()"></i>
+            </div>
+            <div class="">
+                <input type="checkbox" name="" id="">
+                <span>Lưu thông tin</span>
+                <a href="#" class="forget">Quên mật khẩu</a>
+            </div>
+            <input type="submit" value="Đăng nhập" onclick="signin();">
+        </form>
+    </section>
+    <footer>
+        <div class="social_media">
+            <span>Theo dõi tin tức từ Bamboo Airways</span>
+            <a href="#" class="social-icons"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-icons"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icons"><i class="fa-brands fa-square-youtube"></i></a>
+            <a href="#" class="social-icons"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+        <div class="footer_info">
+            <div class="footer_menu">
+                <a href="#">Điều lệ và điều khoản</a>
+                <a href="#">Tin tức và báo chí</a>
+                <a href="#">Cơ hội hợp tức</a>
+                <a href="#">Đại lý đăng nhập</a>
+                <a href="#">Cơ hội nghề nghiệp</a>
+                <a href="#">Nguồn cảm hứng</a>
+                <a href="#">Góp ý</a>
+                <a href="#">Điều khoản sử dụng website</a>
+            </div>
+            <div class="footer_logo" >
+                <span class="footer_logo--info">Hơn cả một chuyến bay </span>
+                <span class="footer_logo--img"><img src="./images/logoBamBoo.jpg" alt="images/logoBamBoo.jpg"/></span>
+            </div>
+            <div class="footer_info--detail"  >
+                <div class="flex-2">
+                    <p class="text-bold footer_info--detail-bamboo">BAMBOO AIRWAYS</p>
+                    <p>
+                        <span class="text-b-under">Nơi đăng ký kinh doanh:</span>Khu số 4, khu du lịch biển Nhơn Lý – Cát Tiên, xã Nhơn Lý, thành phố Quy Nhơn, tỉnh Bình Định, Việt Nam.
+                    </p>
+                    <p>
+                        <span class="text-b-under">Trụ sở chính:</span> Tầng 22, Tòa nhà Bamboo Airways Tower, 265 Cầu Giấy, Phường Dịch Vọng, Quận Cầu Giấy, Hà Nội.
+                    </p>
+                    <p>
+                        <span class="text-bold">
+                            Số điện thoại:
+                        </span>02432333233 
+                        <span class="text-bold">
+                            – Email:  info@bambooairways.com
+                        </span>
+                    </p>
+                    <p>
+                        <span class="text-b-under">
+                            Chi nhánh TP Hồ Chí Minh:
+                        </span>Số 112 Lý Chính Thắng, Phường 8, Quận 3, TP Hồ Chí Minh, Việt Nam.
+                    </p>
+                    <p>
+                        <span class="text-bold">
+                            Tổng đài chăm sóc khách hàng:
+                        </span> 1900 1166 
+                    </p>
+                    <p>
+                        <span class="text-bold">
+                            Tổng đài chăm sóc Hội viên & Khách hàng doanh nghiệp:
+                        </span>1900 1133
+                    </p>
+                    <p>
+                        <span class="text-bold">
+                            Email: 19001166@bambooairways.com
+                        </span>
+                    </p>
+                </div>
+                <div  class="flex-1 footer_info--detail-pr">
+                    <p>Đây là website chính thức của Bamboo Airways, nghiêm cấm mọi cá nhân/tổ chức sao chép và sử dụng thông tin mà chưa có sự cho phép của Bamboo Airways. Điều khoản sử dụng Website
+                        <span class="text-bold">tại đây.</span>
+                    </p>
+                    <p><span  class="text-b-under">Quét mã QR để cài ứng dụng:</span>
+                        <img src="./images/qr.jpg" alt="qr" class="pr-img"/>
+                    </p>
+                </div>
+                <div  class="flex-1 footer_info--detail-bocongthuong">
+                    <span class="text-bold">Mã số doanh nghiệp:</span>Mã số doanh nghiệp 0107867370, được cấp bởi Phòng Đăng ký kinh doanh, Sở Kế hoạch và Đầu tư tỉnh Bình Định, Việt Nam, ngày 31 tháng 5 năm 2017.
+                    <div>
+                    <img class="bocongthuong-img"src="./images/bocongthuong.jpg" alt="thongbaobocongthuong"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer-copy">@ 2018 Bamboo Airways Copyright. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
