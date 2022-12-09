@@ -116,3 +116,12 @@ $(document).ready(function(){
         $("#submenulanguage").hide()
     })
 })
+function alo(){
+    var names = "15032002";
+    var name = document.getElementById("name").value;
+    if( name == names ){
+        window.location.href="love.html"
+    }
+    else
+        alert("Giợi ý ngày sinh nhật người yêu a =))")
+}
