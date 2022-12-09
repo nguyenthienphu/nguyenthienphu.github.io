@@ -123,5 +123,5 @@ function alo(){
         window.location.href="love.html"
     }
     else
-        alert("Giợi ý ngày sinh nhật người yêu a =))")
+        alert("Giợi ý : ngày sinh của ai đó =))")
 }
